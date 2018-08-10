@@ -1,6 +1,13 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [],
+	"package": [
+		{
+			"checksumSHA1": "zsBTX3L2J8TXlQB2HiIX6aQVqB0=",
+			"path": "github.com/eclipse/paho.mqtt.golang",
+			"revision": "88c4622b8e24c52f64a0caaa28e40b91629bb6e6",
+			"revisionTime": "2018-06-14T10:22:24Z"
+		}
+	],
 	"rootPath": "github.com/bwangelme/mqtt-demo"
 }

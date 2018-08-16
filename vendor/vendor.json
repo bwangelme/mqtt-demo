@@ -7,6 +7,24 @@
 			"path": "github.com/eclipse/paho.mqtt.golang",
 			"revision": "88c4622b8e24c52f64a0caaa28e40b91629bb6e6",
 			"revisionTime": "2018-06-14T10:22:24Z"
+		},
+		{
+			"checksumSHA1": "ITCnG3uKUnqNXrnnulKokjQKfN4=",
+			"path": "github.com/eclipse/paho.mqtt.golang/packets",
+			"revision": "88c4622b8e24c52f64a0caaa28e40b91629bb6e6",
+			"revisionTime": "2018-06-14T10:22:24Z"
+		},
+		{
+			"checksumSHA1": "r9l4r3H6FOLQ0c2JaoXpopFjpnw=",
+			"path": "golang.org/x/net/proxy",
+			"revision": "434ec0c7fe3742c984919a691b2018a6e9694425",
+			"revisionTime": "2017-09-25T09:26:47Z"
+		},
+		{
+			"checksumSHA1": "7EZyXN0EmZLgGxZxK01IJua4c8o=",
+			"path": "golang.org/x/net/websocket",
+			"revision": "434ec0c7fe3742c984919a691b2018a6e9694425",
+			"revisionTime": "2017-09-25T09:26:47Z"
 		}
 	],
 	"rootPath": "github.com/bwangelme/mqtt-demo"

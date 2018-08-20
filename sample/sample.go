@@ -27,7 +27,7 @@ Options:
 
 func main() {
 	action := flag.String("action", "", "Action to Publish/Subscribe (required)")
-	// message := flag.String("message", "Hello, EMQTT!", "Message to send")
+	message := flag.String("message", "Hello, EMQTT!", "Message to send")
 	number := flag.Int("num", 1, "Message send number")
 	qos := flag.Int("qos", 1, "Quality of Service (0|1|2)")
 	broker := flag.String("broker", "tcp://vm.bwangel.me:1883", "Broker Addr(ex tcp://vm.bwangel.me:1883)")
@@ -67,14 +67,25 @@ func main() {
 			log.Fatalln(token.Error())
 		}
 
-		msgCount := 0
-		for msgCount < *number {
+		for msgCount := 0; msgCount < *number; msgCount++ {
 			msg := <-message
 			topic, content := msg[0], msg[1]
 			fmt.Printf("[%s]Recv: %s\n", topic, content)
-			msgCount++
 		}
 
 	} else {
+		client := mqtt.NewClient(opts)
+
+		if token := client.Connect(); token.Wait() && token.Error() != nil {
+			log.Fatalln(token.Error())
+		}
+
+		fmt.Println("Start to send message")
+
+		for msgCount := 0; msgCount <= *number; msgCount++ {
+			if token := client.Publish(*topic, byte(*qos), false, *message); token.Wait() && token.Error() != nil {
+				log.Fatalln(token.Error())
+			}
+		}
 	}
 }

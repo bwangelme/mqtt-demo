@@ -1,0 +1,4 @@
+github.com/eclipse/paho.mqtt.golang v0.0.0-20180614102224-88c4622b8e24 h1:21LB+xEZf6xdOrp2JRw5Uongjp7wzGoJ99UnApIlUeg=
+github.com/eclipse/paho.mqtt.golang v0.0.0-20180614102224-88c4622b8e24/go.mod h1:H9keYFcgq3Qr5OUJm/JZI/i6U7joQ8SYLhZwfeOo6Ts=
+golang.org/x/net v0.0.0-20181005035420-146acd28ed58 h1:otZG8yDCO4LVps5+9bxOeNiCvgmOyt96J3roHTYs7oE=
+golang.org/x/net v0.0.0-20181005035420-146acd28ed58/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
